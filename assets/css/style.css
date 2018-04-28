@@ -1,0 +1,269 @@
+html,
+body {
+    margin: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+/* For Footer */
+
+.copyRight {
+    padding: 40px;
+    height: auto;
+    border-top: solid 6px #4aaaa5;
+
+}
+
+footer {
+    text-align: center;
+    background-color: #777777;
+    display: table-row;
+    height: 1px;
+    width: 100px;
+}
+
+/* For Nav Bar */
+
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 72px;
+    background-color: #ffffff;
+    border-bottom: 2px solid;
+    border-color: #7777;
+}
+
+#nameTag {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 15%;
+    font-size:40px;
+    padding: 17px 30px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    padding: 0px 20px;
+    color: #7777;
+    text-decoration: none;
+}
+
+a:hover {
+    color: skyblue;
+}
+
+ul {
+    list-style: none;
+}
+
+#buffer {
+    width: 5%;
+}
+
+li:before {
+    content: '|     ';
+    color: lightgray;  
+}
+
+ul li {
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 28px 0px;
+    font-size: 20px;
+    display: inline;
+    float: right;
+}
+
+/* General settings for Main Content */
+
+.container {
+    height: auto;
+    margin-bottom: 250px;
+}
+
+.main_content {
+    height: auto;
+    position: relative;
+    top: 195px;
+    left: 15%;
+    width: 960px;
+    background-color: #ffffff;
+}
+
+header {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#4aaaa5;
+    padding: 30px 20px;
+}
+
+/* For About Me Page */
+
+.about_me_text{
+    color: #777777;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    padding: 0px 20px 15px 20px;
+    margin: auto;
+    line-height: 2;
+}
+
+p {
+    padding: 20px;
+}
+
+/* For Contact Page */
+
+.box_for_forms {
+    padding: 0px 20px 15px 20px;
+    margin: auto;
+}
+
+form {
+    width: 900px;
+    margin: 20px auto;
+    color: #777777;
+}
+
+form:focus {
+    height: 40px;
+    width: 940px;
+}
+
+input {
+    position: relative;
+    margin: 10px 0px;
+    width: 900px;
+    height: 30px;
+    color: #777777;
+}
+
+.submit {
+    padding: 10px;
+}
+
+textarea {
+    width: 900px;
+    margin:10px 0px;
+}
+#submit-btn {
+    font-size: 20px;
+    width: 130px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: #4aaaa5;
+}
+
+/* For Portfolio Page */
+
+
+.portfolio_box {
+    margin: 20px;
+}
+
+.portfolio_links {
+    margin: auto;
+    position: relative;
+    display: inline;
+    padding: 30px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 940px) {
+    
+    #nameTag {
+        position: absolute;
+        left: 5%;
+    }
+
+    .main_content {
+        left: 5%;
+        width: 600px;
+    }
+
+    nav {
+        position: absolute;
+    }
+
+    .portfolio_links {
+        padding: 30px 5px;
+        display: inline
+    }
+
+    form,
+    input,
+    textarea {
+        width: 550px;
+    }
+
+    footer {
+        width: 940px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+    
+    #nameTag {
+        left: 3%;
+    }
+
+    .main_content {
+        left: 3%;
+    }
+
+    #buffer {
+        width: 0%
+    }
+
+    a {
+        padding: 0px 10px;
+    }
+
+    .container {
+        margin-bottom: 275px;
+    }
+
+    footer {
+        width: 768px;
+    }
+    
+}
+
+@media screen and (max-width: 640px) and (min-width: 0px) {
+
+    #nameTag {
+        left: 0px;
+        width: 641px;
+        text-align: center;
+
+    }
+
+    #buffer {
+        width: 175px;
+    }
+    nav {
+        width: 700px;
+        top: 74px;
+    }
+
+    .main_content {
+        left: 3%;
+    }
+
+    .container {
+        margin-bottom: 250px;
+    }
+
+    footer,
+    .copyRight {
+        width: 641px;
+    }
+}
